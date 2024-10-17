@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clown Studio's Scuffed Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Clown Studio's Scuffed Weather App</h1>
+        <div class="input-group">
+            <input type="text" id="countryInput" placeholder="Country" />
+            <input type="text" id="stateInput" placeholder="State" />
+            <input type="text" id="cityInput" placeholder="City" />
+            <button id="getWeatherBtn">Get Weather</button>
+        </div>
+        <div class="temperature-toggle">
+            <label for="unitSelect">Temperature Unit:</label>
+            <select id="unitSelect">
+                <option value="metric">°C</option>
+                <option value="imperial">°F</option>
+            </select>
+        </div>
+        <div id="weatherResult" style="display: none;"></div>
+        <div class="saved-locations">
+            <h2>Saved Locations</h2>
+            <ul id="locationList"></ul>
+        </div>
+        <footer>
+            <p>&copy; 2024 Clown Studio. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
