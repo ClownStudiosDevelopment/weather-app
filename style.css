@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #2c2f36, #1c1e22);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    flex: 1;
+    min-width: 120px;
+    background-color: #3c3f44;
+    color: #ffffff;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #61dafb;
+    color: #282c34;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #21a1f1;
+    transform: scale(1.05);
+}
+
+.saved-locations {
+    margin: 20px 0;
+}
+
+.saved-locations h2 {
+    margin-bottom: 10px;
+}
+
+.saved-locations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.saved-locations li {
+    margin: 5px 0;
+}
+
+#weatherResult {
+    margin-top: 20px;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.temperature-toggle {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperature-toggle label {
+    margin-right: 10px;
+}
+
+.temperature-toggle select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3c3f44;
+    color: #ffffff;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.temperature-toggle select:hover {
+    background-color: #61dafb;
+    color: #282c34;
+}
+
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    input[type="text"], button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+button.saved-location {
+    background-color: #4caf50;
+    color: white;
+    margin: 5px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.saved-location:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.delete-location {
+    cursor: pointer;
+    color: #ff4c4c;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.delete-location:hover {
+    color: #ff0000;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
